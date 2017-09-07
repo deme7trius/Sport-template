@@ -1,13 +1,6 @@
 $(document).ready(function () {
-    $('#layer-one').mousemove(function (e) {
-        parallax(e, this, 1);
-        parallax(e, document.getElementById('layer-two'), 4);
-        parallax(e, document.getElementById('layer-three'), 2);
-        parallax(e, document.getElementById('layer-four'), 3);
 
-    });
-
-
+// divisions switch
 $('#a').click(function(e) {
   e.preventDefault();
   $('#b').removeClass('active');
@@ -22,16 +15,8 @@ $('#b').click(function(e) {
   $('#second-team').show();
  $( '#first-team' ).hide();
 });
-// if($('#first-team').is(':visible')){
-//   $('#a').addClass('active');
-//   $('#b').removeClass('active');
-// };
-//  if($('#second-team').is(':visible')) {
-//   $('#a').removeClass('active');
-//   $('#b').addClass('active');
-// };
-
 // end function
+//carousel
  $('.owl-carousel').owlCarousel({
      items:5,
      loop:true,
@@ -53,7 +38,8 @@ $('#b').click(function(e) {
         }
      }
     });
-
+// end function
+//scroll to top
     $(function(){
         $(".up a").click(function(e){
             e.preventDefault();
@@ -70,12 +56,35 @@ $('#b').click(function(e) {
             }
         }
     });
-      
+// end function
+      //countdown
+// Set the date we're counting down to
+var countDownDate = new Date("Oct 22, 2017 15:00:00").getTime();
 
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+    // Get todays date and time
+    var now = new Date().getTime();
+    
+    // Find the distance between now an the count down date
+    var distance = countDownDate - now;
+    
+    // Time calculations for days, hours, minutes and seconds
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+    // Output the result in an element with id="demo"
+    document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+    + minutes + "m " + seconds + "s ";
+    
+    // If the count down is over, write some text 
+    if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("demo").innerHTML = "MATCHDAY";
+    }
+}, 1000);
+// end function
 });
-function parallax(e, target, layer) {
-    var layer_coeff = 100 / layer;
-    var x = ($(window).width() - target.offsetWidth) / 2 - (e.pageX - ($(window).width() / 2)) / layer_coeff;
-    var y = ($(window).height() - target.offsetHeight) / 2 - (e.pageY - ($(window).height() / 2)) / layer_coeff;
-    $(target).offset({ top: y ,left : x });
-};
