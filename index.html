@@ -10,8 +10,10 @@
   <link rel="stylesheet" href="carousel/dist/assets/owl.carousel.min.css" />
   <link rel="stylesheet" href="carousel/dist/assets/owl.carousel.min.css" />
   <link href="https://fonts.googleapis.com/css?family=Sarpanch" rel="stylesheet">
+  <link rel="stylesheet" href="flexslider/flexslider.css" type="text/css">
   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="flexslider/jquery.flexslider.js"></script>
   <script src="carousel/dist/owl.carousel.min.js"></script>
   <script src="functions.js"></script>
 </head>
@@ -51,7 +53,7 @@
         <li id="countdown"></li>
       </ul>
     </div>
-    <div class="next-match" style="background-image: url('https://scontent-sof1-1.xx.fbcdn.net/v/t1.0-9/13654179_1155888484467422_7870231931892731748_n.jpg?oh=117975f20f7ee43bafed02b3ae53ce8e&oe=5A25DB2E');">
+    <div class="next-match" style="background-image: url('');">
       <div class="layer">
         <h1><span class="hometeam">LIONS</span><br> VS <br><span class="awayteam">GATORS</span></h1>
         <div class="additional">
@@ -59,6 +61,22 @@
           <h3>City</h3>
           <h4>Wed 6th Sep 7:35 PM</h4>
         </div>
+      </div>
+      <div class="flexslider">
+        <ul class="slides">
+          <li>
+            <img src="https://scontent-sof1-1.xx.fbcdn.net/v/t31.0-8/18921126_1472920786097522_3319061260070170365_o.jpg?oh=041dbe73c48769560fe8c0acf9493e2c&oe=5A5DFE24" />
+          </li>
+          <li>
+            <img src="https://scontent-sof1-1.xx.fbcdn.net/v/t31.0-8/14712841_1238729742849962_5059385209972984487_o.jpg?oh=197fed3dd9d2840c9b5dd7bf73ebfec4&oe=5A15C7FE" />
+          </li>
+          <li>
+            <img src="https://scontent-sof1-1.xx.fbcdn.net/v/t31.0-8/18921126_1472920786097522_3319061260070170365_o.jpg?oh=041dbe73c48769560fe8c0acf9493e2c&oe=5A5DFE24" />
+          </li>
+          <li>
+            <img src="https://scontent-sof1-1.xx.fbcdn.net/v/t31.0-8/14712841_1238729742849962_5059385209972984487_o.jpg?oh=197fed3dd9d2840c9b5dd7bf73ebfec4&oe=5A15C7FE" />
+          </li>
+        </ul>
       </div>
     </div>
     <div class="news w66 fl" style="background-image: url(https://scontent-sof1-1.xx.fbcdn.net/v/t31.0-8/14712841_1238729742849962_5059385209972984487_o.jpg?oh=197fed3dd9d2840c9b5dd7bf73ebfec4&oe=5A15C7FE);">
@@ -116,16 +134,27 @@
     </div>
   </div>
   <div class="gallery w66 fl"">
-    <div class="layer">
+    <img src="https://scontent-sof1-1.xx.fbcdn.net/v/t31.0-8/18921126_1472920786097522_3319061260070170365_o.jpg?oh=041dbe73c48769560fe8c0acf9493e2c&oe=5A5DFE24" alt="gallery image" class="w100" />
+
+    <div class="layer"><a href="#" class="w100 h100" id="gallery">GALLERY</a>
     </div>
-    <img src="https://scontent-sof1-1.xx.fbcdn.net/v/t31.0-8/18921126_1472920786097522_3319061260070170365_o.jpg?oh=041dbe73c48769560fe8c0acf9493e2c&oe=5A5DFE24" alt="gallery image" />
-      <a href="#" id="gallery">GALLERY</a>
   </div>
-  <div class="players w33 fl" style="background-image: url(https://scontent-sof1-1.xx.fbcdn.net/v/t1.0-9/15178060_559242930937480_4676287501205753607_n.jpg?oh=73f9fd68d79633a7e68daf9657c936f4&oe=5A5957BE); ">
-    <div class="layer"><a href="#">PLAYERS</a>
+  <div class="players w33 fl" style="background-image: url(); ">
+    <img src="https://scontent-sof1-1.xx.fbcdn.net/v/t1.0-9/15178060_559242930937480_4676287501205753607_n.jpg?oh=73f9fd68d79633a7e68daf9657c936f4&oe=5A5957BE" alt="players image" class="w100 h100"/>
+    <div class="layer"><a href="#" id="players" class="w100 h100">PLAYERS</a>
     </div>
   </div>
 </main>
+<footer class="fl w100">
+  <div class="contactinfo w50 fl">
+    <p>Current address number street</p>
+    <p>Phone number</p>
+    <p>E-mail address</p>
+  </div>
+  <div class="developer w50 fl">
+    DEVELOPED BY DGD
+  </div>
+</footer>
 </div>
 </body>
 </html>

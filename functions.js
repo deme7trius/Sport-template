@@ -87,4 +87,10 @@ var x = setInterval(function() {
     }
 }, 1000);
 // end function
+//flexslider
+
+        $('.flexslider').flexslider({
+            animation: "slide"
+        });
+      //end function
 });
