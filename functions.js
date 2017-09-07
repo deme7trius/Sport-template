@@ -90,7 +90,9 @@ var x = setInterval(function() {
 //flexslider
 
         $('.flexslider').flexslider({
-            animation: "slide"
+            animation: "fade",
+            slideshowSpeed: 5000,
+            animationSpeed: 3000
         });
       //end function
 });
