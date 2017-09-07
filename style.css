@@ -166,19 +166,18 @@ a:hover{color:red;}
 .next-match h1{position: absolute;top: 20%;left: 5%;text-align: center;font-size: 40px;}
 .additional{position: absolute;top: 20%;right: 5%;text-align: center;}
 .additional h2{font-size: 24px;color:red;font-weight: bold;}
-.news{height: 460px;background-size: cover;background-position: center;background-repeat: no-repeat;position: relative;}
-.news-text{position: absolute;bottom: 5%;left: 5%;max-width: 320px;}
-.news-text-one{font-size: 20px;}
-.news-text-two{font-size: 30px;padding: 20px 10px;}
-.news-text > div{background-color: rgba(26,27,29,.8);padding: 10px;}
-.news .layer{background-color: rgba(0,0,0,0);transition: background-color 1s ease;}
-.news:hover .layer{background-color: rgba(0,0,0,0.5);}
-.shop{height: 460px;background-size: cover;background-position: center;background-repeat: no-repeat;position: relative;}
-.shop .layer{background-color: rgba(0,0,0,0.5);transition: background-color 1s ease;}
+.news{height: 460px;background-size: cover;background-position: center;background-repeat: no-repeat;position: relative;overflow: hidden;}
+.news a{font-size: 35px;text-shadow: 1px 1px 1px #000;text-align: center;position: absolute;width: 100%;height: 100%;top:30%;}
+.news .layer{background-color: rgba(0,0,0,0.5);transition: background-color 1s ease;position: absolute;top: 0;}
+.news:hover .layer{background-color: rgba(0,0,0,0);}
+.news:hover img{transform: scale(1.1);}
+.news img{transition: transform 1s ease;width: 100%;}
+.shop{height: 460px;background-size: cover;background-position: center;background-repeat: no-repeat;position: relative;overflow: hidden;}
+.shop img{transition: transform 1s ease;width: 100%;}
+.shop a{font-size: 35px;position: absolute;text-shadow: 1px 1px 1px #000;text-align: center;line-height: 460px;width: 100%;}
+.shop .layer{background-color: rgba(0,0,0,0.5);transition: background-color 1s ease;position: absolute;top: 0;}
 .shop:hover .layer{background-color: rgba(0,0,0,0);}
-.shop h2{transition: color 1s ease;}
-.shop:hover h2{color:#666;}
-.shop h2{font-size: 36px;position: absolute;bottom: 0;left: 27%;}
+.shop:hover img{transform: scale(1.1);}
 .standings{overflow: hidden;position: relative;}
 .static{padding: 0 0 0 20px;}
 .triggers li{width: 28%;float: left;text-align: center;}
@@ -215,7 +214,7 @@ footer{height: 80px;}
 .owl-carousel .owl-item img{max-height: 200px;width: 80%!important;}
 
 @media screen and (max-width: 768px){
-	.w33,.w66,.w80{width: 100%;}
+	.w33,.w66,.w85{width: 100%;}
 	.main-header{width: 100%;}
 	nav{display: none;}
 }
