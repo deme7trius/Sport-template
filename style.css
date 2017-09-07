@@ -194,3 +194,19 @@ a:hover{color:red;}
     top: 0;
     right: 0;
 visibility:visible;}
+.gallery{height: 460px;background-size: cover;background-position: center;background-repeat: no-repeat;position: relative;}
+.galler img{width: 100%;}
+.gallery .layer{background-color: rgba(0,0,0,0.5);transition: background-color 1s ease;}
+.gallery:hover .layer{background-color: rgba(0,0,0,0);}
+.gallery:hover img{transform: scale(1.1);}
+.players{height: 460px;background-size: cover;background-position: center;background-repeat: no-repeat;position: relative;}
+.players .layer{background-color: rgba(0,0,0,0.5);transition: background-color 1s ease;}
+.players:hover .layer{background-color: rgba(0,0,0,0);}
+
+
+
+@media screen and (max-width: 768px){
+	.w33,.w66,.w80{width: 100%;}
+	.main-header{width: 100%;}
+	nav{display: none;}
+}
